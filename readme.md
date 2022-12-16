@@ -9,4 +9,8 @@
 _Live Website_ : [Link](https://seo-mastery.netlify.app/)
 
 ### This webpage is  not Completely Responsive as of now .
+## **Expected Output:**
+![SEO Master](./output.png)
 
+## **Achieved Output:**
+![SEO Master](./SEO-Master.png)
