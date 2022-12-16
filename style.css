@@ -1,0 +1,147 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffefe;
+}
+
+/* navigation section */
+
+.navbar-container {
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grow-list ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: -200px;
+}
+.grow-list ul li {
+  margin: 0px 0px 0px 25px;
+  color: #bfbebf;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.grow-list ul li:first-child {
+  color: #000000;
+  font-weight: 500;
+}
+.button-group .nav-button {
+  border: none;
+  margin: 0px 0px 0px 250px;
+  background-color: #5954b2;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* main section */
+
+/* left-main-section */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+   
+}
+.banner-container .heading-text {
+  font-size: 3em;
+  line-height:-20px;
+  color: #3c2f60;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 60%;
+  margin: 0px auto 0px auto;
+}
+.banner-container span {
+  color: #7d80db;
+}
+.banner-container .description {
+  margin: 20px 140px;
+  font-weight: 500;
+  color: #bfbebf;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 55%;
+}
+.banner-container .nav-button {
+  border: none;
+  background-color: #5954b2;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 18px 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  width: 200px;
+  margin: 20px 10% 0px 20%;
+}
+
+/* right-main-section */
+.banner-container div img{
+    height: 70vh;
+    width: 55vw;
+}
+
+/* ------------------------------------------ */
+/* Mobile responsive media query */
+/* --------------------------------------------*/
+@media (max-width:768px){
+    .navbar-container {
+        margin: 0px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 15vh;
+    }
+    
+    .navbar-container ul{
+        display: none;
+    }
+    .navbar-container .nav-button{
+        margin:0px 0px 0px 0px;
+        
+
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-container .heading-text{
+        width: 100vw;
+        text-align: center;
+        margin-top: 300px;
+    }
+    .banner-container .description{
+       margin:20px 0px 0px 80px;
+       min-width: 70%;
+    }
+    .banner-container img{
+        min-width: 100vw;
+    }
+}
+
+
+/* ------------------------------------------ */
+/* Tab responsive media query */
+/* --------------------------------------------*/
+@media (max-width:992px){
+    .navbar-container ul{
+        display: none;
+    }
+}
